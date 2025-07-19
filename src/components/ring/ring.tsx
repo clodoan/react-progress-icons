@@ -38,7 +38,10 @@ const Ring = ({ progress, className }: RingProps) => {
 				strokeLinecap="round"
 				strokeDasharray={strokeDasharray}
 				strokeDashoffset={strokeDashoffset}
-				className="transition-all duration-300 ease-out"
+				className="transition-all duration-500 ease-out-quint will-change-transform"
+				style={{
+					transitionTimingFunction: "cubic-bezier(.23, 1, .32, 1)"
+				}}
 			/>
 		</svg>
 	);
