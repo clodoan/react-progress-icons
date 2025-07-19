@@ -3,5 +3,5 @@ export type RingProps = {
 	size?: number;
 	strokeWidth?: number;
 	className?: string;
-	color?: string;
+	thickness?: "thin" | "medium" | "thick";
 };

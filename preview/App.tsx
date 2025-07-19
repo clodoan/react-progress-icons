@@ -49,6 +49,7 @@ function App() {
           </DemoSection>
         </div>
       </div>
+      <div className="text-center text-sm text-gray-500 mt-10"> Made with ❤️ by <a href="https://claudio.land" className="text-blue-600">Claudio Angrigiani</a></div>
     </div>
   );
 }

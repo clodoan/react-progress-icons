@@ -4,7 +4,7 @@ import CodeExample from '../code-example';
 const basicUsageCode = `import { Ring } from 'react-progress-icons';
 
 function MyComponent() {
-  return <Ring progress={0.75} />;
+  return <Ring progress={0.75} thickness="thin" />;
 }`;
 
 const customStylingCode = `import { Ring } from 'react-progress-icons';
@@ -14,6 +14,7 @@ function MyComponent() {
     <Ring 
       progress={0.5} 
       className="w-12 h-12 text-blue-600" 
+      thickness="thin"
     />
   );
 }`;

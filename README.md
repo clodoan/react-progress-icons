@@ -67,6 +67,7 @@ A circular progress indicator.
 - `size` (number, optional): Size of the ring in pixels
 - `strokeWidth` (number, optional): Width of the stroke
 - `color` (string, optional): Color of the progress ring
+- `thickness` (string, optional): Thickness of the ring (thin, medium, thick)
 
 #### Example
 
@@ -74,6 +75,7 @@ A circular progress indicator.
 <Ring 
   progress={0.75} 
   className="w-12 h-12 text-blue-600" 
+  thickness="thin"
 />
 ```
 

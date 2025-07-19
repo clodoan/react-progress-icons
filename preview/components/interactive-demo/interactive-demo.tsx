@@ -21,7 +21,7 @@ const InteractiveDemo: React.FC<InteractiveDemoProps> = ({
       </h3>
 
       <div className="flex items-center space-x-4">
-        <Ring progress={progress} className="w-8 h-8 text-blue-600" />
+        <Ring progress={progress} className="w-8 h-8 text-blue-600" thickness="thin" />
         <div className="flex-1">
           <div className="flex justify-between text-sm text-gray-600 mb-1">
             <span>Progress</span>

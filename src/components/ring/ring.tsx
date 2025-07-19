@@ -1,7 +1,7 @@
 import { cx } from "class-variance-authority";
 import type { RingProps } from "@/types";
 
-const Ring = ({ progress, className }: RingProps) => {
+const Ring = ({ progress, className, thickness = "medium" }: RingProps) => {
 	const diameter = 20;
 	const radius = diameter / 3;
 	const circumference = 2 * Math.PI * radius;
@@ -23,17 +23,17 @@ const Ring = ({ progress, className }: RingProps) => {
 				cy={diameter / 2}
 				r={radius}
 				stroke="currentColor"
-				strokeWidth={4}
+				strokeWidth={thickness === "thin" ? 2 : thickness === "medium" ? 4 : 6}
 				fill="none"
 				opacity="0.2"
 				className="transition-opacity duration-200"
 			/>
 			<circle
-				cx={diameter / 2}
+				cx={diameter / 2}   
 				cy={diameter / 2}
 				r={radius}
 				stroke="currentColor"
-				strokeWidth={4}
+				strokeWidth={thickness === "thin" ? 2 : thickness === "medium" ? 4 : 6}
 				fill="none"
 				strokeLinecap="round"
 				strokeDasharray={strokeDasharray}
