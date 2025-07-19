@@ -5,7 +5,9 @@
 	"main": "dist/index.js",
 	"module": "dist/index.esm.js",
 	"types": "dist/index.d.ts",
-	"files": ["dist"],
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"build": "rollup -c",
 		"dev": "rollup -c -w",
@@ -15,7 +17,13 @@
 		"preview:build": "vite build",
 		"preview:preview": "vite preview"
 	},
-	"keywords": ["react", "icons", "progress", "tasks", "ui"],
+	"keywords": [
+		"react",
+		"icons",
+		"progress",
+		"tasks",
+		"ui"
+	],
 	"author": "Your Name",
 	"license": "MIT",
 	"peerDependencies": {
