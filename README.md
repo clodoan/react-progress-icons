@@ -8,7 +8,7 @@ A collection of beautiful progress indicators for React applications.
 npm install react-progress-icons
 ```
 
-![Preview](/public/demo.jpg)
+![Preview](public/demo.jpg)
 
 ## Usage
 
