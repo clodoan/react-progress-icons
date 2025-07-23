@@ -8,13 +8,15 @@ A collection of beautiful progress indicators for React applications.
 npm install react-progress-icons
 ```
 
+![Preview](./public/demo.jpg)
+
 ## Usage
 
 ```jsx
 import { Ring } from 'react-progress-icons';
 
 function MyComponent() {
-  return <Ring progress={0.75} />;
+  return <Ring progress={0.75} className="size-8 text-blue-600" />;
 }
 ```
 
@@ -63,10 +65,7 @@ A circular progress indicator.
 #### Props
 
 - `progress` (number, required): Progress value between 0 and 1
-- `className` (string, optional): Additional CSS classes
-- `size` (number, optional): Size of the ring in pixels
-- `strokeWidth` (number, optional): Width of the stroke
-- `color` (string, optional): Color of the progress ring
+- `className` (string, optional): Pass tailwind classes to the ring to control size and color
 - `thickness` (string, optional): Thickness of the ring (thin, medium, thick)
 
 #### Example
@@ -74,7 +73,7 @@ A circular progress indicator.
 ```jsx
 <Ring 
   progress={0.75} 
-  className="w-12 h-12 text-blue-600" 
+  className="size-12 text-blue-600" 
   thickness="thin"
 />
 ```
