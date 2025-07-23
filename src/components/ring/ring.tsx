@@ -7,6 +7,7 @@ const Ring = ({ progress, className, thickness = "medium" }: RingProps) => {
 	const circumference = 2 * Math.PI * radius;
 	const strokeDasharray = circumference;
 	const strokeDashoffset = circumference - progress * circumference;
+	const progressPercentage = Math.round(progress * 100);
 
 	return (
 		<svg
@@ -14,10 +15,13 @@ const Ring = ({ progress, className, thickness = "medium" }: RingProps) => {
 			height={diameter}
 			className={cx("transform -rotate-90", className)}
 			viewBox={`0 0 ${diameter} ${diameter}`}
-			role="img"
-			aria-label={`Progress: ${Math.round(progress * 100)}%`}
+			role="progressbar"
+			aria-valuemin={0}
+			aria-valuemax={100}
+			aria-valuenow={progressPercentage}
+			aria-label={`Progress: ${progressPercentage}%`}
 		>
-			<title>Progress: {Math.round(progress * 100)}%</title>
+			<title>Progress: {progressPercentage}%</title>
 			<circle
 				cx={diameter / 2}
 				cy={diameter / 2}

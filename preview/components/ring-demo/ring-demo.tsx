@@ -2,6 +2,7 @@ import React from 'react';
 import InteractiveDemo from '../interactive-demo/interactive-demo';
 import SizeVariations from '../size-variations/size-variations';
 import ColorVariations from '../color-variations/color-variations';
+import ThicknessVariations from '../thickness-variations/size-variations';
 
 interface RingDemoProps {
   progress: number;
@@ -25,9 +26,10 @@ const RingDemo: React.FC<RingDemoProps> = ({
           isAnimating={isAnimating}
           onAnimate={onAnimate}
         />
-        <SizeVariations />
       </div>
+      <SizeVariations />
       <ColorVariations />
+      <ThicknessVariations />
     </>
   );
 };
