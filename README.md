@@ -1,14 +1,12 @@
 # React Progress Icons
 
-A collection of beautiful progress indicators for React applications.
+A collection of beautiful progress indicators component to use in your React projects.
 
 ## Installation
 
 ```bash
 npm install react-progress-icons
 ```
-
-![Preview](public/demo.jpg)
 
 ## Usage
 
@@ -65,7 +63,7 @@ A circular progress indicator.
 #### Props
 
 - `progress` (number, required): Progress value between 0 and 1
-- `className` (string, optional): Pass tailwind classes to the ring to control size and color
+- `className` (string, optional): Pass tailwind classes to the ring to control size and color. If color is not passed it'll inherit the color from the parent.
 - `thickness` (string, optional): Thickness of the ring (thin, medium, thick)
 
 #### Example
