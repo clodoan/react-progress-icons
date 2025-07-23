@@ -2,7 +2,7 @@
 
 A collection of beautiful progress indicators for React applications.
 
-![Preview](preview/public/demo.jpg)
+![Preview](./preview/public/demo.jpg)
 
 ## Installation
 
